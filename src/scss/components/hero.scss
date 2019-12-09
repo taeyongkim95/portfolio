@@ -1,0 +1,49 @@
+.hero-container {
+  background-color:$almost-black;
+  height:100vh;
+  width:100%;
+  position: relative;
+  text-align: center;
+  z-index:-3;
+}
+
+.clip-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 8em;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  padding: .5em .75em;
+  text-align: center;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url(https://picsum.photos/id/158/800/400);
+
+  &:before {
+    position: absolute;
+    content:'';
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+  }
+
+  &:after {
+   position: absolute;
+   content:'';
+   z-index: -1;
+   top: .125em;
+   right: .125em;
+   bottom: .125em;
+   left: .125em;
+   background-color:$almost-black;
+  }
+}

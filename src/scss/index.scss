@@ -1,0 +1,24 @@
+// SETTINGS
+@import 'settings/variables';
+@import 'settings/mixins';
+@import 'settings/fonts';
+
+// UTILITIES
+@import 'utilities/base-style';
+@import 'utilities/layoutAlignment';
+@import 'utilities/marginPadding';
+
+//OBJECTS
+@import 'objects/centerContainer';
+@import 'objects/globals';
+@import 'objects/o-content-section';
+
+//COMPONENTS
+@import 'components/hero';
+@import 'components/body';
+
+// VENDORS
+@import 'vendor/mmenu';
+@import 'vendor/hamburger';
+// @import 'vendor/slick';
+@import 'vendor/aos';
