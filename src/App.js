@@ -49,8 +49,8 @@ function App() {
         <div className="body-blocks">
           <h3 className="traits">how to reach me</h3>
           <ul className="lines">
-            <li><a href="tel:6167172423">phone:616.717.2423</a></li>
-            <li><a href="mailto=taeyongkim.95@gmail.com">email:taeyongkim.95@gmail.com</a></li>
+            <li><a href="tel:6167172423" data-rel="external">phone:616.717.2423</a></li>
+            <li><a href="mailto=taeyongkim.95@gmail.com" data-rel="external">email:taeyongkim.95@gmail.com</a></li>
           </ul>
         </div>
 

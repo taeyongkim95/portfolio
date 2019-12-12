@@ -46,4 +46,12 @@
    left: .125em;
    background-color:$almost-black;
   }
+
+  @include tablet-down {
+    font-size:4em;
+  }
+
+  @include phone {
+    font-size:3em;
+  }
 }
