@@ -1,7 +1,16 @@
 import React from 'react';
+import { BodyBlock } from './components/bodyBlocks';
 import './scss/App.scss';
 
 function App() {
+
+  let whoIAmArray = ["father/husband", "tck", "developer", "blogger"];
+  let skillsArray =  ["html5 / css3", "js", "php", "adobe ps, ai, id, xd, pr, ae, au"];
+  let thingsILikeArray = ["film enthusiast", "gaming aficionado", "music pundit", "haribo addict"];
+
+  let phoneLink = <a href="tel:6167172423" data-rel="external">phone:616.717.2423</a>;
+  let mailLink = <a href="mailto=taeyongkim.95@gmail.com" data-rel="external">email:taeyongkim.95@gmail.com</a>;
+
   return (
     <div>
 
@@ -15,44 +24,17 @@ function App() {
 
       <section className="body-container">
 
-        <div className="body-blocks">
-          <h2 className="traits">who i am</h2>
-          <ul className="lines">
-            <li>father / husband</li>
-            <li>tck</li>
-            <li>developer</li>
-            <li>blogger</li>
-          </ul>
-        </div>
+        <BodyBlock title="who i am" 
+                   lines={ whoIAmArray }/>
+        
+        <BodyBlock title="skills i have" 
+                   lines={ skillsArray }/>
 
-        <div className="body-blocks">
-          <h2 className="traits">skills i have</h2>
-          <ul className="lines">
-            <li>html5 / css3</li>
-            <li>js</li>
-            <li>php</li>
-            <li>adobe ps, ai, id, xd, pr, ae, au</li>
-            <li></li>
-          </ul>
-        </div>
+        <BodyBlock title="things i like" 
+                   lines={ thingsILikeArray }/>
 
-        <div className="body-blocks">
-          <h2 className="traits">things i like</h2>
-          <ul className="lines">
-            <li>film enthusiast</li>
-            <li>gaming aficionado</li>
-            <li>music pundit</li>
-            <li>haribo addict</li>
-          </ul>
-        </div>
-
-        <div className="body-blocks">
-          <h3 className="traits">how to reach me</h3>
-          <ul className="lines">
-            <li><a href="tel:6167172423" data-rel="external">phone:616.717.2423</a></li>
-            <li><a href="mailto=taeyongkim.95@gmail.com" data-rel="external">email:taeyongkim.95@gmail.com</a></li>
-          </ul>
-        </div>
+        <BodyBlock title="how to reach me" 
+                   lines={ [phoneLink, mailLink] }/>
 
       </section>
 
