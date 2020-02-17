@@ -9,7 +9,7 @@ function App() {
   let thingsILikeArray = ["film enthusiast", "gaming aficionado", "music pundit", "haribo addict"];
 
   let phoneLink = <a href="tel:6167172423" data-rel="external">phone:616.717.2423</a>;
-  let mailLink = <a href="mailto=taeyongkim.95@gmail.com" data-rel="external">email:taeyongkim.95@gmail.com</a>;
+  let mailLink = <a href="mailto:taeyongkim.95@gmail.com" data-rel="external">email:taeyongkim.95@gmail.com</a>;
 
   return (
     <div>
